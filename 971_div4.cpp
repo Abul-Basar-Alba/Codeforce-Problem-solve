@@ -180,6 +180,83 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// #define ll long long int
+// using namespace std;
+ 
+// int main() 
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+ 
+//     ll t;
+//     cin >> t;
+ 
+//     while (t--)
+//     {
+//         ll n,k;
+//         cin >> n>>k;
+//         if(n%2==1 && k%2==0||n<k)
+//         {
+//            cout<<"NO\n";
+//         }
+//         else if(n==k)
+//         {
+//           cout<<"YES\n";
+//           for(int i=1;i<=n;i++)
+//           {
+//            cout<<1<<' ';
+//           }
+//           cout<<endl;
+//         }
+//         else
+//         {
+//           if(n%2==1 && k%2==1)
+//           {
+//             ll x=n-(k-1);
+//             if(x&1)
+//             {
+//               cout<<"YES\n";
+//               cout<<x<<' ';
+//               for(int i=1;i<k;i++)
+//               cout<<1<<' ';
+//               cout<<endl;
+//             }
+//             else
+//             cout<<"NO\n";
+//           }
+//           else if(n%2==0&&k%2==1)
+//           {
+//             ll x=n-2*(k-1);
+//             if(x%2==0&&x>0)
+//             {
+//               cout<<"YES\n";
+//               cout<<x<<' ';
+//               for(int i=1;i<k;i++)
+//               cout<<2<<' ';
+//               cout<<endl;
+//             }
+//             else
+//             cout<<"NO\n"; 
+//           }
+//           else if(n%2==0&&k%2==0)
+//           {
+//             ll x=n-(k-1);
+//             if(x%2==1&&x>0)
+//             {
+//               cout<<"YES\n";
+//               cout<<x<<' ';
+//               for(int i=1;i<k;i++)
+//               cout<<1<<' ';
+//               cout<<endl;
+//             }
+//             else
+//             cout<<"NO\n"; 
+//           } 
+//         }
+//     }
+// }
+
 #include <bits/stdc++.h>
 #define ll long long int
 using namespace std;
@@ -194,65 +271,14 @@ int main()
  
     while (t--)
     {
-        ll n,k;
-        cin >> n>>k;
-        if(n%2==1 && k%2==0||n<k)
-        {
-           cout<<"NO\n";
-        }
-        else if(n==k)
-        {
-          cout<<"YES\n";
-          for(int i=1;i<=n;i++)
-          {
-           cout<<1<<' ';
-          }
-          cout<<endl;
-        }
-        else
-        {
-          if(n%2==1 && k%2==1)
-          {
-            ll x=n-(k-1);
-            if(x&1)
-            {
-              cout<<"YES\n";
-              cout<<x<<' ';
-              for(int i=1;i<k;i++)
-              cout<<1<<' ';
-              cout<<endl;
-            }
-            else
-            cout<<"NO\n";
-          }
-          else if(n%2==0&&k%2==1)
-          {
-            ll x=n-2*(k-1);
-            if(x%2==0&&x>0)
-            {
-              cout<<"YES\n";
-              cout<<x<<' ';
-              for(int i=1;i<k;i++)
-              cout<<2<<' ';
-              cout<<endl;
-            }
-            else
-            cout<<"NO\n"; 
-          }
-          else if(n%2==0&&k%2==0)
-          {
-            ll x=n-(k-1);
-            if(x%2==1&&x>0)
-            {
-              cout<<"YES\n";
-              cout<<x<<' ';
-              for(int i=1;i<k;i++)
-              cout<<1<<' ';
-              cout<<endl;
-            }
-            else
-            cout<<"NO\n"; 
-          } 
-        }
+      ll x,y,k;
+      cin>>x>>y>>k;
+      ll a=(x+k-1)/k;
+      ll b=(y+k-1)/k;
+      if(a<b)
+      a=b;
+      else if(a>b)  
+      b=a-1;
+      cout<<a+b<<endl;
     }
-}
+  }
