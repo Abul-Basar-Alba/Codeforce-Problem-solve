@@ -16,9 +16,7 @@
 //     {
 //       ll a,b;
 //       cin>>a>>b;
-//       ll c=a;
-//       ll mn=(c-a)+(b-c);
-//       cout<<mn<<endl;
+//       cout<<b-a<<endl;
 //     }
 // }
 
