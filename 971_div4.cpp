@@ -257,28 +257,3 @@
 //     }
 // }
 
-#include <bits/stdc++.h>
-#define ll long long int
-using namespace std;
- 
-int main() 
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
- 
-    ll t;
-    cin >> t;
- 
-    while (t--)
-    {
-      ll x,y,k;
-      cin>>x>>y>>k;
-      ll a=(x+k-1)/k;
-      ll b=(y+k-1)/k;
-      if(a<b)
-      a=b;
-      else if(a>b)  
-      b=a-1;
-      cout<<a+b<<endl;
-    }
-  }
