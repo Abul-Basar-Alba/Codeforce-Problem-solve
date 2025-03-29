@@ -22,30 +22,37 @@
 //   }
 
 #include <bits/stdc++.h>
+#define ll long long int 
 using namespace std;
 
-void solve() {
-    int n;
+void solve() 
+{
+    ll n;
     cin >> n;
-    vector<long long> a(n);
-    long long sum = 0, max_elem = 0;
-    
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
-        sum += a[i];
-        max_elem = max(max_elem, a[i]);
-    }
+    vector<ll> a(n);
 
-    cout << sum - 2 * (sum - max_elem) << "\n";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    ll j=n-2;
+    for (int i = 0;i< n-2; i++) 
+    {
+       ll x=a[j]-a[i];
+       a[j]=x;
+    }
+    cout<<(a[n-1]-a[j])<<endl;
 }
 
-int main() {
+int main() 
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    int t;
+    ll t;
     cin >> t;
-    while (t--) {
+    while (t--) 
+    {
         solve();
     }
     
