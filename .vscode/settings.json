@@ -3,7 +3,8 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "chrono": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "random": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
