@@ -64,6 +64,8 @@
 //     return 0;
 // }
 
+
+
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
@@ -80,27 +82,25 @@ int main()
         ll n;
         cin >> n;
         vector<ll> a(n);
-        for (ll &x : a) 
+        ll sum = 0;
+        for (ll i = 0; i < n; i++)
         {
-            cin >> x;
+            cin >> a[i];
+            sum += a[i];
         }
+        sort(a.begin(), a.end());
 
-        if (n <= 2) 
+        if (n==1||n==2)
         {
-            cout << -1 << "\n";
+            cout << -1 << endl;
             continue;
         }
-
-        sort(a.begin(), a.end());
-        ll S = accumulate(a.begin(), a.end(), 0LL);
-    
-        ll need = n/2 + 1;
-     
-        ll b = a[need - 1];
-        ll req = 2 * n * b - S + 1;
-        ll x = max(0LL, req);
-
-        cout << x << "\n";
+       
+            ll inx = a[n / 2]; 
+            ll n_avg = inx * 2;
+            ll need = n_avg * n + 1; 
+            ll x = need - sum;
+            cout << max(0LL,x) << endl;
+        
     }
-    return 0;
 }
