@@ -1,0 +1,1 @@
+{"name":"Local: pstu_weekly07","url":"d:\\Github\\Codeforce-Problem-solve\\pstu_weekly07.cpp","tests":[{"id":1747414068285,"input":"1 5\n5 2\n","output":"18"},{"id":1747414110463,"input":"0 1\n0 0\n","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Github\\Codeforce-Problem-solve\\pstu_weekly07.cpp","group":"local","local":true}
