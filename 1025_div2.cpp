@@ -52,39 +52,30 @@
 using namespace std;
 using ll = long long;
 
-ll ceil_log2(ll x) 
-{
-    ll res = 0;
-    ll p = 1;
-    while (p < x) 
-    {
-        p <<= 1;
-        res++;
-    }
-    return res;
-}
-
 int main() 
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int t;
+    ll t;
     cin >> t;
     while (t--) 
     {
         ll n, m, a, b;
         cin >> n >> m >> a >> b;
 
-        ll lgn = ceil_log2(n);
-        ll lgm = ceil_log2(m);
+        ll lgn = ceil(log2(n));
+        ll lgm = ceil(log2(m));
+        
+        ll x=min( a,(n - a + 1));
+        ll y=min( b,(m - b + 1));
 
-        ll best_row = lgm + min( ceil_log2(a), ceil_log2(n - a + 1) );
+        ll row= lgm+ceil(log2(x));
 
-        ll best_col = lgn + min( ceil_log2(b), ceil_log2(m - b + 1) );
+        ll col=lgn+ceil(log2(y));
 
-        ll ans= 1 + min(best_row, best_col);
-
+        ll ans= 1 + min(row, col);
+ 
         cout << ans << "\n";
     }
     return 0;
