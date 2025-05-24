@@ -192,64 +192,89 @@
 
 //G. Interview
 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-  int t;
-  cin>>t;
-  while(t--)
-  {
-    int n;
-    cin>>n;
-    vector<int>a(n),pre(n+1);
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//   int t;
+//   cin>>t;
+//   while(t--)
+//   {
+//     int n;
+//     cin>>n;
+//     vector<int>a(n),pre(n+1);
 
-    for(int i=0;i<n;i++)
-        cin>>a[i];
+//     for(int i=0;i<n;i++)
+//         cin>>a[i];
 
-    pre[0]=0;
-    for(int i=0;i<n;i++)
-        pre[i+1]=pre[i]+a[i];
+//     pre[0]=0;
+//     for(int i=0;i<n;i++)
+//         pre[i+1]=pre[i]+a[i];
 
-    int lo=0,hi=n-1;
-    int ans=-1;
-while (lo<=hi)
-{
-    int mid = (lo + hi) / 2;
-    int k = mid - lo + 1;
-    cout << "? " << k << " ";
-    for (int i = lo; i <= mid; i++)
-    {
-        cout << i + 1 << " ";
-    }
-    cout << endl;
+//     int lo=0,hi=n-1;
+//     int ans=-1;
+// while (lo<=hi)
+// {
+//     int mid = (lo + hi) / 2;
+//     int k = mid - lo + 1;
+//     cout << "? " << k << " ";
+//     for (int i = lo; i <= mid; i++)
+//     {
+//         cout << i + 1 << " ";
+//     }
+//     cout << endl;
 
-    int sum = pre[mid + 1] - pre[lo];
-    int x;
-    cin >> x;
-    if (x==sum)
-    {
-        lo = mid + 1;
+//     int sum = pre[mid + 1] - pre[lo];
+//     int x;
+//     cin >> x;
+//     if (x==sum)
+//     {
+//         lo = mid + 1;
         
-    }
-    else
+//     }
+//     else
+//     {
+//         ans = mid;
+//         hi = mid-1;
+//     }
+// }
+// cout<<" ! "<<ans+1<<endl;
+
+// // Final check between lo and hi
+// // cout << "? 1 " << lo + 1 << endl;
+
+// // int x;
+// // cin >> x;
+// // if (x > a[lo])
+// //     cout << "! " << lo + 1 << endl;
+// // else
+// //     cout << "! " << hi + 1 << endl;
+
+//    }
+
+// }
+
+//H
+
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() 
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    ll t;
+    cin >> t;
+    while(t--)
     {
-        ans = mid;
-        hi = mid-1;
+        ll a,b,d;
+        cin >> a >> b >> d;
+
+
+       // cout<<(d*d)/double(2)<<endl;
+       cout<<fixed<<setprecision(7)<<(d*d)/double(2)<<endl;
+
     }
-}
-cout<<" ! "<<ans+1<<endl;
-
-// Final check between lo and hi
-// cout << "? 1 " << lo + 1 << endl;
-
-// int x;
-// cin >> x;
-// if (x > a[lo])
-//     cout << "! " << lo + 1 << endl;
-// else
-//     cout << "! " << hi + 1 << endl;
-
-   }
-
 }
