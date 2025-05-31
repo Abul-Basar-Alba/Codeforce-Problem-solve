@@ -256,25 +256,146 @@
 
 //H
 
+// #include <bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+
+// int main() 
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     cout.tie(NULL);
+//     ll t;
+//     cin >> t;
+//     while(t--)
+//     {
+//         ll a,b,d;
+//         cin >> a >> b >> d;
+
+
+//        // cout<<(d*d)/double(2)<<endl;
+//        cout<<fixed<<setprecision(7)<<(d*d)/double(2)<<endl;
+
+//     }
+// }
+
+
+// #include <bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+
+// int main() 
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     cout.tie(NULL);
+//     string s1,s2;
+//     cin>>s1>>s2;
+//     if(s1.size()<s2.size())
+//     {
+//         swap(s1,s2);
+//     }
+//     ll n = s1.size();
+//     ll m = s2.size();
+//     ll  prime=7;
+//     ll  mod=1e9+7;
+//     ll ar[n+4];
+//     ar[0]=0;
+//     for(int i=0;i<n;i++)
+//     {
+//         ar[i+1]=(((ar[i]*prime)% mod) + s1[i])%mod;
+//     }
+//     ll val=1;
+//     for(int i=1;i<=m;i++)
+//     {
+//         val=(val*prime)%mod;
+//     }
+//     ll v=0;
+//     for(int i=0;i<m;i++)
+//     {
+//         v=(((v*prime)%mod )+ s2[i])%mod;
+//     }
+//     ll cn=0;
+//     for(int i=m;i<=n;i+=m)
+//     {
+//         ll ans1=ar[i];
+//         ll ans2=ar[i-m];
+//         ans2=(ans2*val)%mod;
+//         ans1=(ans1-ans2+mod)%mod;
+//         if(ans1==v)
+//         {
+//             cn++;
+//         }
+//     }
+//     cout<<cn<<endl;
+//     return 0;
+
+// }
+
+
+
+
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
 
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    ll t;
-    cin >> t;
-    while(t--)
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    string s1, s2;
+    cin >> s1 >> s2;
+
+    if (s1 + s2 != s2 + s1) 
     {
-        ll a,b,d;
-        cin >> a >> b >> d;
-
-
-       // cout<<(d*d)/double(2)<<endl;
-       cout<<fixed<<setprecision(7)<<(d*d)/double(2)<<endl;
-
+        cout << 0 << "\n";
+        return 0;
     }
+
+   
+    ll n = s1.size(), m = s2.size();
+    ll L =__gcd(n, m);
+
+    string base = s1.substr(0, L);
+
+
+    ll ans = 0;
+    for (ll k = 1; k * k <= L; k++) 
+    {
+        if (L % k == 0) 
+        {
+            // check divisor k
+            bool ok = true;
+            for (ll i = k; i < L; i++) 
+            {
+                if (base[i] != base[i - k]) 
+                {
+                    ok = false;
+                    break;
+                }
+            }
+            if (ok) 
+            ans++;
+
+            ll k2 = L / k;
+            if (k2 != k) 
+            {
+                ok = true;
+                for (int i = k2; i < L; ++i) 
+                {
+                    if (base[i] != base[i - k2]) 
+                    {
+                        ok = false;
+                        break;
+                    }
+                }
+                if (ok) 
+                ans++;
+            }
+        }
+    }
+
+    cout << ans << "\n";
+    return 0;
 }

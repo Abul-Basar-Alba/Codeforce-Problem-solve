@@ -76,7 +76,7 @@ int main()
     }
 }*/
 
-/*#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 #define ll long long int
 #define mod 1000000007
 using namespace std;
@@ -116,32 +116,35 @@ int main()
         if(ans==val)cn++;
     }
     cout<<cn<<endl;
-}*/
-#include <bits/stdc++.h>
-using namespace std;
-
-namespace str {
-/** Computes the Pi array of s. */
-vector<int> pi(const string &s) {
-	int n = (int)s.size();
-	vector<int> pi_s(n);
-	for (int i = 1, j = 0; i < n; i++) {
-		while (j > 0 && s[j] != s[i]) { j = pi_s[j - 1]; }
-		if (s[i] == s[j]) { j++; }
-		pi_s[i] = j;
-	}
-	return pi_s;
 }
-}  // namespace str
 
-int main() {
-	string P, T;
-	cin >> T >> P;
-	string S = P + '#' + T;
-	vector<int> pi = str::pi(S);
-	int ans = 0;
-	for (int l : pi) {
-		if (l == P.size()) { ans++; }
-	}
-	cout << ans << '\n';
-}
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// namespace str {
+// /** Computes the Pi array of s. */
+// vector<int> pi(const string &s) {
+// 	int n = (int)s.size();
+// 	vector<int> pi_s(n);
+// 	for (int i = 1, j = 0; i < n; i++) {
+// 		while (j > 0 && s[j] != s[i]) { j = pi_s[j - 1]; }
+// 		if (s[i] == s[j]) { j++; }
+// 		pi_s[i] = j;
+// 	}
+// 	return pi_s;
+// }
+// }  // namespace str
+
+// int main() {
+// 	string P, T;
+// 	cin >> T >> P;
+// 	string S = P + '#' + T;
+// 	vector<int> pi = str::pi(S);
+// 	int ans = 0;
+// 	for (int l : pi) {
+// 		if (l == P.size()) { ans++; }
+// 	}
+// 	cout << ans << '\n';
+// }
