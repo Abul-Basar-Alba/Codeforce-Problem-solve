@@ -71,6 +71,7 @@
 //     }
 // }
 
+//B. We're Competing
 
 #include <bits/stdc++.h>
 #define ll long long
@@ -88,6 +89,11 @@ int main()
     string ans = "tamocompetindo";
 
     bool flag = false;
+     if(s.size()<ans.size())
+    {
+        cout<<"NAO\n";
+        return 0;
+    }
 
     for (int i = 0; i < s.size(); i++)
     {
@@ -117,3 +123,36 @@ int main()
 
     return 0;
 }
+
+//I. Aura Farming
+
+// #include <bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+
+// int main() 
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     ll n,k;
+//     cin>>n>>k;
+//     vector<pair<ll,ll>> v(n);
+//     for(ll i=0; i<n; i++)
+//     {
+//         cin>>v[i].first>>v[i].second;
+//     }
+//     sort(v.begin(), v.end());
+//     for(ll i=0; i<n; i++)
+//     {
+//         if(v[i].first <=k)
+//         {
+//             k += v[i].second;
+//         }
+        
+//     }
+//     cout<<k<<endl;
+
+
+//     return 0;
+// }
