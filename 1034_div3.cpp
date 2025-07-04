@@ -175,67 +175,41 @@ int main()
     {
         ll n;
         cin >> n;
-        vector<ll> a(n);
-        vector<ll> F(n+2, 0);
+        vector<ll> v(n+2),res(n+2);
         for (ll i = 0; i < n; i++) 
         {
-            cin >> a[i];
-            if (a[i] <= n) 
-                F[a[i]]++;
+            ll x;
+            cin >> x;
+            v[x]++;
         }
-
-        ll m0 = 0;
-        while (m0 <= n+1 && F[m0] > 0) 
-            m0++;
-
-        vector<ll> prefix_sum(n+2, 0);
-        prefix_sum[0] = F[0];
-        for (ll i = 1; i <= n+1; i++) 
+        ll mex = 0;
+        for (ll i = 0; i <=n; i++)
         {
-            prefix_sum[i] = prefix_sum[i-1] + F[i];
-        }
-
-        vector<ll> D(m0+1, 0);
-        for (ll x = 1; x <= m0; x++) 
-        {
-            D[x] = D[x-1] + (F[x-1] - 1);
-        }
-
-        vector<ll> diff(n+2, 0);
-
-        for (ll x = 0; x <= m0; x++) 
-        {
-            ll low = (F[x] > 0) ? F[x] : 0;
-            ll gt = n - prefix_sum[x];
-            ll high = low + D[x] + gt;
-
-            if (low > n) 
-                continue;
-            if (high > n)
-                high = n;
-
-            diff[low] += 1;
-            if (high + 1 <= n) 
+            if (v[i] == 0) 
             {
-                diff[high + 1] -= 1;
+                mex = i;
+                break;
             }
         }
 
-        vector<ll> ans(n+1, 0);
-        ll cur = 0;
-        for (ll k = 0; k <= n; k++) 
+        ll cnt = n;
+        for (ll i = 0; i <mex; i++) 
         {
-            cur += diff[k];
-            ans[k] = cur;
+            res[v[i]]+=1;
+            res[cnt] -= 1;
+            cnt--;
         }
 
-        for (ll k = 0; k <= n; k++) 
+        res[0] = 1;
+        for (ll i = 1; i <=n; i++) 
         {
-            cout << ans[k];
-            if (k < n) 
-                cout << " ";
+            res[i] = res[i - 1]+ res[i];
         }
-        cout << "\n";
+        for (ll i = 0; i <= n; i++) 
+        {
+            cout << res[i] << " ";
+        }
+        cout << "\n";  
     }
     return 0;
 }
