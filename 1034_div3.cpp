@@ -203,7 +203,7 @@ int main()
         res[0] = 1;
         for (ll i = 1; i <=n; i++) 
         {
-            res[i] = res[i - 1]+ res[i];
+            res[i] = res[i - 1] + res[i];
         }
         for (ll i = 0; i <= n; i++) 
         {

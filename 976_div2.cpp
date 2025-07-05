@@ -31,33 +31,55 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
+
+// int main()
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     ll t;
+//     cin >> t;
+//     while (t--) 
+//     {
+//         ll k;
+//         cin >> k;
+
+//         ll m = (sqrt(k));
+
+//         ll n=k+m;
+//         ll res=sqrt(n);
+//         if(res>m)
+//         {
+//             n++;
+//         }
+//         cout << n << "\n";
+//     }
+//     return 0;
+// }
+
+
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-
-int main()
+int main() 
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+    
     ll t;
     cin >> t;
     while (t--) 
     {
-        ll k;
-        cin >> k;
-
-        ll m = (sqrt(k));
-
-        ll n=k+m;
-        ll res=sqrt(n);
-        if(res>m)
-        {
-            n++;
-        }
-
-     
-        cout << n << "\n";
+        ll b,c,d;
+        cin >> b >> c >> d;
+        ll a=b^d;
+        if((a|b)-(a&c)==d)
+        cout<<a<<endl;
+        else 
+        cout<<-1<<endl;
     }
     return 0;
 }
