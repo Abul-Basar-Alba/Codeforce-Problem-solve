@@ -1,61 +1,61 @@
-// #include <bits/stdc++.h>
-// #define ll long long
-// using namespace std;
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
 
-// int main() 
-// {
-//     ios::sync_with_stdio(false);
-//     cin.tie(nullptr);
+int main() 
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-//     int t;
-//     cin >> t;
-//     while (t--) 
-//     {
-//         ll a, b, x, y;
-//         cin >> a >> b >> x >> y;
+    int t;
+    cin >> t;
+    while (t--) 
+    {
+        ll a, b, x, y;
+        cin >> a >> b >> x >> y;
 
-//         if (a == b) 
-//         {
+        if (a == b) 
+        {
 
-//             cout << 0 << '\n';
-//             continue;
-//         }
+            cout << 0 << '\n';
+            continue;
+        }
 
-//         if (a > b) 
-//         {
-//             if ((a ^ 1) == b)
-//                 cout << y << '\n';
-//             else
-//                 cout << -1 << '\n';
-//             continue;
-//         }
+        if (a > b) 
+        {
+            if ((a ^ 1) == b)
+                cout << y << '\n';
+            else
+                cout << -1 << '\n';
+            continue;
+        }
 
-//         ll cost = 0;
-//         while (a < b) 
-//         {
+        ll cost = 0;
+        while (a < b) 
+        {
            
-//             if ((a ^ 1) > a && (a ^ 1) <= b && y < x) 
-//             {
-//                 a = a ^ 1;
-//                 cost += y;
-//             } 
-//             else 
-//             {
-//                 a = a + 1;
-//                 cost += x;
-//             }
-//         }
+            if ((a ^ 1) > a && (a ^ 1) <= b && y < x) 
+            {
+                a = a ^ 1;
+                cost += y;
+            } 
+            else 
+            {
+                a = a + 1;
+                cost += x;
+            }
+        }
 
-//         if (a == b)
-//             cout << cost << '\n';
-//         else if ((a ^ 1) == b)
-//             cout << cost + y << '\n';
-//         else
-//             cout << -1 << '\n';
-//     }
+        if (a == b)
+            cout << cost << '\n';
+        else if ((a ^ 1) == b)
+            cout << cost + y << '\n';
+        else
+            cout << -1 << '\n';
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 // #include <bits/stdc++.h>
