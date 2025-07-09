@@ -75,7 +75,6 @@ int main()
         cout << mx << "\n";
 
     }
-
   
     return 0;
 }
