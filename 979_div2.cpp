@@ -29,35 +29,71 @@
 
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
+// int main() 
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+    
+//     ll t;
+//     cin >> t;
+//     while (t--) 
+//     {
+//         ll n;
+//         cin >> n;
+//        string s="";
+//        for(ll i = 0; i < n; i++)
+//        {
+//            ll x=n/2;
+//            if(i==x)
+//            {
+//             s+="1";
+//            }
+//            else
+//            {
+//             s+="0";
+//            }
+//        }
+//        cout << s << "\n";
+//     }
+// }
+
+
 #include <bits/stdc++.h>
-using namespace std;
 using ll = long long;
+using namespace std;
+
 int main() 
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
-    ll t;
+
+   ll t;
     cin >> t;
     while (t--) 
     {
         ll n;
-        cin >> n;
-       string s="";
-       for(ll i = 0; i < n; i++)
-       {
-           ll x=n/2;
-           if(i==x)
-           {
-            s+="1";
-           }
-           else
-           {
-            s+="0";
-           }
-       }
-       cout << s << "\n";
+        string s;
+        cin >> n >> s;
+
+        bool alice= false;
+        
+        if (s.front() == '1' || s.back() == '1') 
+        {
+            alice= true;
+        }
+
+        for (int i = 1; i < n && !alice; i++) 
+        {
+            if (s[i] == '1' && s[i-1] == '1')
+             {
+                alice= true;
+            }
+        }
+
+        cout << (alice ? "YES\n" : "NO\n");
     }
+    return 0;
 }
-
-
