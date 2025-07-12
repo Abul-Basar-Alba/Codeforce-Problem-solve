@@ -240,6 +240,50 @@
 
 
 
+// #include <bits/stdc++.h>
+// using ll = long long;
+// using namespace std;
+
+// int main()
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+    
+//     ll t;
+//     cin >> t;
+//     while (t--)
+//     {
+//         ll n, m;
+//         cin >> n >> m;
+//         vector<string> grid(n);
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin >> grid[i];
+//         }
+
+//         ll flipa= 0, flipb = 0;
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             for (int j = 0; j < m; j++)
+//             {
+//                 ll a = (i + j) % 2;   
+//                 ll b = 1 - a;   
+//                 ll cur = grid[i][j] - '0';
+//                 if (cur != a)
+//                     flipa++;
+//                 if (cur != b)
+//                     flipb++;
+//             }
+//         }
+
+//         cout << min(flipa, flipb) << '\n';
+//     }
+
+//     return 0;
+// }
+
+
 #include <bits/stdc++.h>
 using ll = long long;
 using namespace std;
@@ -253,31 +297,49 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n, m;
-        cin >> n >> m;
-        vector<string> grid(n);
-        for (int i = 0; i < n; i++)
+        ll n;
+        cin>>n;
+        vector<ll>a(n);
+        for(int i=0;i<n;i++)
         {
-            cin >> grid[i];
+            cin>>a[i];
         }
-
-        ll flipa= 0, flipb = 0;
-
-        for (int i = 0; i < n; i++)
+        if(is_sorted(a.begin(),a.end()))
         {
-            for (int j = 0; j < m; j++)
+            cout<<0<<endl;
+            continue;
+        }
+          if(is_sorted(a.rbegin(),a.rend()))
+        {
+            cout<<a[0]<<endl;
+            continue;
+        }
+        ll L = 0, R = 1000000000;
+        for(int i = 0; i + 1 < n; i++)
+        {
+            if(a[i] < a[i+1])
             {
-                ll a = (i + j) % 2;   
-                ll b = 1 - a;   
-                ll cur = grid[i][j] - '0';
-                if (cur != a)
-                    flipa++;
-                if (cur != b)
-                    flipb++;
+                // x <= floor((a[i]+a[i+1]) / 2)
+                ll hi = (a[i] + a[i+1]) / 2;
+                R = min(R, hi);
             }
+            else if(a[i] > a[i+1])
+            {
+                // x >= ceil((a[i] + a[i+1]) / 2)
+                ll lo = (a[i] + a[i+1] + 1) / 2;
+                L = max(L, lo);
+            }
+            
         }
 
-        cout << min(flipa, flipb) << '\n';
+        if(L <= R)
+        {
+            cout << L << "\n";
+        } 
+        else 
+        {
+            cout << -1 << "\n";
+        }
     }
 
     return 0;
