@@ -27,58 +27,81 @@
 // }
 
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// #define ll long long
+// #define pb push_back
+// #define all(x) x.begin(),x.end()
+// #define FastIO ios::sync_with_stdio(0);cin.tie(0); cout.tie(0);
+
+// const ll N= 1e5+5;
+
+// int main()
+// {
+//    FastIO;
+
+//    ll t;
+//    cin>>t;
+//    while(t--)
+//    {
+//       ll n,k; 
+//       cin>>n>>k;
+//       vector<ll> a(n);
+//       for(ll i=0;i<n;i++) 
+//       cin>>a[i];
+
+//       sort(all(a));
+  
+//         ll sum=0,ex=0;
+//       for(ll i=0;i<n;i++) 
+//       {
+//         ll cur= a[i]*(n-i);
+//         cur+= sum;
+//         if(cur<k) 
+//         {
+//           ++ex;
+//         }
+//         else 
+//         {
+//           break;
+//         }
+
+//         sum+= a[i];
+//       }
+
+//       cout<<k+ex<<endl;
+//    }
+//    return 0;
+// }
+
+#include <bits/stdc++.h>
+using ll = long long;
 using namespace std;
-
-#define ll long long
-#define pb push_back
-#define all(x) x.begin(),x.end()
-#define FastIO ios::sync_with_stdio(0);cin.tie(0); cout.tie(0);
-
-const ll N= 1e5+5;
-
 int main()
 {
-   FastIO;
-
-   ll t;
-   cin>>t;
-   while(t--)
-   {
-      ll n,k; 
-      cin>>n>>k;
-      vector<ll> a(n);
-      for(ll i=0;i<n;i++) 
-      cin>>a[i];
-
-      sort(all(a));
-  
-        ll sum=0,ex=0;
-      for(ll i=0;i<n;i++) 
-      {
-        ll cur= a[i]*(n-i);
-        cur+= sum;
-        if(cur<k) 
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    ll t;
+    cin >> t;
+    while (t--)
+    {
+        ll n;
+        cin >> n;
+        vector<pair<ll, ll>> a(n);
+        for (ll i = 0; i < n; i++)
         {
-          ++ex;
+            cin >> a[i].first >> a[i].second;
         }
-        else 
+        sort(a.begin(), a.end(), [](auto x, auto y){
+    return x.first + x.second < y.first + y.second;
+});
+
+        for(auto &p : a)
         {
-          break;
+            cout << p.first << " " << p.second<< " ";
         }
-
-        sum+= a[i];
-      }
-
-      cout<<k+ex<<endl;
-   }
-   return 0;
+        cout << "\n";
 }
-/*
-
-*/
-
-
-
-
-
+}
