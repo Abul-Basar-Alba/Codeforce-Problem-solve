@@ -1,3 +1,27 @@
+#include<bits/stdc++.h>
+#define ll long long int 
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n;
+        cin>>n;
+        if(n%2!=0)
+        {
+            cout<<"Kosuke\n";
+        }
+        else
+        cout<<"Sakurako\n";
+    }
+}
+
+
+
 // #include<bits/stdc++.h>
 // #define ll long long int 
 // using namespace std;
@@ -47,52 +71,113 @@
 // }
 
 
-#include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
 
-int main() 
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+// int main() 
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
 
-    ll t;
-    cin >> t;
-    while (t--) 
-    {
-        ll n;
-        cin >> n;
-        vector<ll> a(n);
-        for (int i = 0; i < n; i++) 
-        {
-            cin >> a[i];
-        }
+//     ll t;
+//     cin >> t;
+//     while (t--) 
+//     {
+//         ll n;
+//         cin >> n;
+//         vector<ll> a(n);
+//         for (int i = 0; i < n; i++) 
+//         {
+//             cin >> a[i];
+//         }
 
-        set<ll> s;
-        ll pre_sum = 0;
-        ll ans = 0;
+//         set<ll> s;
+//         ll pre_sum = 0;
+//         ll ans = 0;
 
-        s.insert(0);
+//         s.insert(0);
 
-        for (int i = 0; i < n; i++) 
-        {
-            pre_sum += a[i];
+//         for (int i = 0; i < n; i++) 
+//         {
+//             pre_sum += a[i];
 
-            if (s.count(pre_sum)) 
-            {
-                ans++;
-                s.clear();
-                s.insert(0);
-                pre_sum = 0;
-            }
-            else 
-            {
-                s.insert(pre_sum);
-            }
-        }
+//             if (s.count(pre_sum)) 
+//             {
+//                 ans++;
+//                 s.clear();
+//                 s.insert(0);
+//                 pre_sum = 0;
+//             }
+//             else 
+//             {
+//                 s.insert(pre_sum);
+//             }
+//         }
 
-        cout << ans << "\n";
-    }
+//         cout << ans << "\n";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
+
+// int main() 
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     ll t;
+//     cin >> t;
+//     while (t--) 
+//     {
+//         ll n;
+//         cin >> n;
+//         vector<ll> a(n+2);
+//         for (int i = 0; i < n; i++) 
+//         {
+//             cin >> a[i];
+//         }
+//         a[n] = 0; 
+//         ll mn=0;
+//         for(int i=0;i<n-1;i++)
+//         {
+//             if(a[i]== a[i+1])
+//             {
+//                 mn++;
+//             }
+//         }
+//         for(int i=0;i<n/2;i++)
+//         {
+//             if(i!=0)
+//             {
+//             if((a[i]!=a[n-i-1])&&(a[n-i-1]==a[n-i-2]|| a[i]==a[i+1]||a[i]==a[i-1]||a[n-i-1]==a[n-i])&&(a[i]!=a[n-i])&&(a[n-i-1]!=a[i-1]))
+//             {
+//                swap(a[i], a[n-i-1]);
+//             }
+//             }
+//             else
+//             {
+//             if((a[i]!=a[n-i-1])&&(a[n-i-1]==a[n-i-2]|| a[i]==a[i+1])&&(a[i]!=a[n-i]))
+//             {
+//                swap(a[i], a[n-i-1]);
+//             }
+//             }
+//         }
+//         ll cnt=0;
+//         for(int i=0;i<n-1;i++)
+//         {
+//             if(a[i]== a[i+1])
+//             {
+//                 cnt++;
+//             }
+//         }
+
+//        mn=min(mn,cnt);
+//        cout << mn << "\n";
+//     }
+// }

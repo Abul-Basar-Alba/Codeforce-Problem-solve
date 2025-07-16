@@ -96,7 +96,7 @@ int main()
         }
         sort(a.begin(), a.end(), [](auto x, auto y){
     return x.first + x.second < y.first + y.second;
-});
+ });
 
         for(auto &p : a)
         {
