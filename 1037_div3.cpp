@@ -125,44 +125,55 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-
+ 
 int main() 
 {
     ios::sync_with_stdio(false); 
     cin.tie(nullptr);
-
+ 
     ll t;
     cin >> t;
-
+ 
     while (t--) 
     {
         ll n;
         cin >> n;
-
-        vector<ll> p(n), s(n);
-        for (int i = 0; i < n; ++i) 
-        cin >> p[i];
-        for (int i = 0; i < n; ++i) 
-        cin >> s[i];
-
-        bool ok = true;
-
-        for (int i = 0; i < n; ++i) 
-        {
-            ll g =__gcd(p[i], s[i]);
-            if (g < min(p[i], s[i])) 
-            {
-                ok = false;
-                break;
-            }
-        }
-
-        cout << (ok ? "YES" : "NO") << '\n';
+       vector<ll> p(n), s(n);
+    for (ll &it : p)
+    {
+        cin >> it;
+    } 
+    for (ll &it : s)
+    {
+        cin >> it;
+    } 
+    vector<ll> a(n);
+    for (int i = 0; i < n; ++i) 
+    {
+        a[i] =(p[i]*s[i]/__gcd(p[i], s[i]));
     }
-
+    vector<ll> pr(n), su(n);
+    pr[0] = a[0];
+    for (int i = 1; i < n; ++i) 
+    {
+        pr[i] = __gcd(pr[i - 1], a[i]);
+    }
+    su[n - 1] = a[n - 1];
+    for (int i = n - 2; i >= 0; --i) 
+    {
+        su[i] = __gcd(a[i], su[i + 1]);
+    }
+    if (pr == p && su == s)
+    {
+        cout<< "YES\n";
+    }
+    else
+    {
+        cout << "NO\n";
+    }             
+}
     return 0;
 }
-
 
 // #include <bits/stdc++.h>
 // using namespace std;
