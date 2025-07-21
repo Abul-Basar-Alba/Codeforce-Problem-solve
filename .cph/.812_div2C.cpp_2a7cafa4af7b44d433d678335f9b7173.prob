@@ -1,0 +1,1 @@
+{"name":"Local: 812_div2C","url":"/mnt/Codeforce-Problem-solve/812_div2C.cpp","tests":[{"id":1753117686062,"input":"3\n3\n4\n7\n","output":"1 0 2 \n0 3 2 1 \n1 0 2 6 5 4 3 \n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/Codeforce-Problem-solve/812_div2C.cpp","group":"local","local":true}
