@@ -1,6 +1,6 @@
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -27,7 +27,7 @@
 //B - Garbage Collection 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -68,7 +68,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -116,7 +116,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 
 // const int dx[] = {-1, 1, 0, 0};
@@ -187,7 +187,7 @@
 
 
 #include <bits/stdc++.h>
-#define ll long long
+#define ll ll
 using namespace std;
 
 int main() 

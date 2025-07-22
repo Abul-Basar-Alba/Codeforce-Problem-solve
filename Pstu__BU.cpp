@@ -2,7 +2,7 @@
 //L. Ammar-utiful Permutations
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // int main()
 // {
@@ -30,7 +30,7 @@
 // J. Resli-utiful Pair
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // int main()
 // {
@@ -49,7 +49,7 @@
 //C. Elias-utiful Array
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 ll maxpos(ll x) 
 {

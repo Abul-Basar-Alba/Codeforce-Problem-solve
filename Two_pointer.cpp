@@ -368,7 +368,7 @@ int main()
 }*/
 //F. Eating Candies
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 void solve(ll a[],ll n)
 {

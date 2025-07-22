@@ -1,5 +1,5 @@
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
  
 // int main(){
@@ -54,7 +54,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-using int64 = long long;
+using int64 = ll;
 
 int64 move(char ch) 
 {

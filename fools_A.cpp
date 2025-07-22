@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 
 }
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -35,7 +35,7 @@ int main()
 
 }*/
 /*#include<bits/stdc++.h>
-#define ll unsigned long long
+#define ll unsigned ll
 using namespace std;
 int main()
 {
@@ -53,7 +53,7 @@ int main()
 }
 */
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

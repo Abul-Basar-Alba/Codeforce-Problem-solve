@@ -14,7 +14,7 @@ int main()
             cin>>a[j];
         }
         /*int min=a[0];
-        long long int sum=1;
+        ll int sum=1;
         for(int j=0;j<n;j++)
         {
             if(min>=a[j])
@@ -25,7 +25,7 @@ int main()
         }*/
         sort(a,a+n);
         a[0]=a[0]+1;
-        long long int sum=1;
+        ll int sum=1;
         for(int j=0;j<n;j++)
         {
             sum=sum*a[j];

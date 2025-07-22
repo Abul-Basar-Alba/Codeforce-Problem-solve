@@ -22,7 +22,7 @@
 //A. Ant Hill
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // int main()
 // {
@@ -52,7 +52,7 @@
 //B. Is It A Math Problem?
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // set<ll>s;
@@ -99,7 +99,7 @@
 //E. Working Time
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -153,7 +153,7 @@
 //F. Smallest Difference
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -257,7 +257,7 @@
 //H
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -281,7 +281,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -336,7 +336,7 @@
 
 
 #include <bits/stdc++.h>
-#define ll long long
+#define ll ll
 using namespace std;
 
 int main() 

@@ -2,7 +2,7 @@
 //A: Kevin and Combination Lock
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -72,7 +72,7 @@
 //B. Kevin and Permutation
 
 #include <bits/stdc++.h>
-#define ll long long
+#define ll ll
 using namespace std;
 
 int main() 

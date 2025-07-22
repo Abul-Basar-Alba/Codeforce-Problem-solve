@@ -1,5 +1,5 @@
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -60,7 +60,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -99,7 +99,7 @@
 //}
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //const int mod= 1000000007;
 //int main()
@@ -133,7 +133,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //const int mod= 1000000007;
 //int main()

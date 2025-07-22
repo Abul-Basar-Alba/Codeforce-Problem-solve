@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -34,7 +34,7 @@ int main()
     cout<<sum<<endl;
 }*/
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -65,7 +65,7 @@ int main()
     cout<<ans<<endl;
 }*/
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int MAXN = 1000005; // Adjust the size as per the constraints
 int main()
@@ -102,7 +102,7 @@ int main()
     return 0;
 }*/
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int MOD = 1073741824;
 const int MAXN = 101;

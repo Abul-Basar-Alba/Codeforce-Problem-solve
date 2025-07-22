@@ -1,7 +1,7 @@
 //B - Japanese Cursed Doll 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -57,7 +57,7 @@
 //A - Grid Walk 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -111,7 +111,7 @@
 //C - Minimum Glutton 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -166,7 +166,7 @@
 //D - Avoid K Palindrome 2 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 bool isPalindrome(const string& s, ll start, ll len) 

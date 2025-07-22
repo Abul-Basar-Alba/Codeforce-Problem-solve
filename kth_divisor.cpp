@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 set<int>s;
@@ -35,7 +35,7 @@ int main()
 // kth divisor problem codechef vector proces
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 set<ll>s;
 void countDivisors(ll n)
@@ -68,7 +68,7 @@ int main()
 // kth divisor problem codechef iterator proces
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 set<ll> s;

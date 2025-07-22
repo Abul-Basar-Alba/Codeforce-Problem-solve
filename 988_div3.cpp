@@ -1,7 +1,7 @@
 //A. Twice
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -36,7 +36,7 @@
 //C. Superultra's Favorite Permutation
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // bool isPrime(int n) 
 // {
@@ -113,7 +113,7 @@
 
 //B. Intercepted Inputs
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() 

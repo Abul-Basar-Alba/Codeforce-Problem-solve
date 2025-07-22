@@ -1,7 +1,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 // int main() 
 // {
@@ -43,7 +43,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 // int main() 
 // {
@@ -100,7 +100,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 // int main() 
 // {
@@ -167,7 +167,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 // int main() 
 // {

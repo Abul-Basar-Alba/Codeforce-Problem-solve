@@ -1,5 +1,5 @@
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -40,7 +40,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
+#define ll ll
 #define all(x) x.begin(),x.end()
 #define FastIO ios::sync_with_stdio(0);cin.tie(0); cout.tie(0);
 
@@ -100,7 +100,7 @@ int main()
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()

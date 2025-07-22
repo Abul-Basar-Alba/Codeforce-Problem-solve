@@ -2,7 +2,7 @@
 //A. MEX Table
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -26,7 +26,7 @@
 //B. Gorilla and the Exam
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -85,7 +85,7 @@
 //A. Tender Carpenter (Good by 2024)
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() 

@@ -1,6 +1,6 @@
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main()
@@ -47,7 +47,7 @@ int main()
 }
 */
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -94,29 +94,29 @@ int main() {
 
     while (t--) {
         int n;
-        long long k;
+        ll k;
         cin >> n >> k; // Number of distinct types of cards and the number of coins
 
-        vector<long long> cards(n);
+        vector<ll> cards(n);
         for (int i = 0; i < n; ++i) {
             cin >> cards[i]; // Number of cards of each type
         }
 
         // Calculate how many additional cards of each type can be bought
-        vector<long long> additional_cards;
+        vector<ll> additional_cards;
         for (int i = 0; i < n; ++i) {
             additional_cards.push_back(min(k, cards[i]));
             k -= additional_cards[i];
         }
 
         // Rearrange the cards to maximize the score
-        long long score = 0;
+        ll score = 0;
         for (int i = 0; i < n; ++i) {
-            long long min_cards = min(cards[i], additional_cards[i]);
+            ll min_cards = min(cards[i], additional_cards[i]);
             score += min_cards * (min_cards + 1) / 2; // Calculate score for each type of card
             cards[i] -= min_cards;
             if (i > 0) {
-                long long common_cards = min(cards[i], additional_cards[i - 1]);
+                ll common_cards = min(cards[i], additional_cards[i - 1]);
                 score += common_cards; // Score for subarrays between different types of cards
                 cards[i] -= common_cards;
             }

@@ -1,13 +1,13 @@
 //string hashing
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 #define mod 1000000007
 using namespace std;
 
 ll gethas(string s)
 {
-    //long long int mod=1e9+7;
+    //ll int mod=1e9+7;
     int ans=0;
     int prime=31;
     int pow=1;
@@ -34,7 +34,7 @@ int main()
 //Substring hashing
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 #define mod 1000000007
 using namespace std;
 
@@ -77,7 +77,7 @@ int main()
 }*/
 
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 #define mod 1000000007
 using namespace std;
 int main()

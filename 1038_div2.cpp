@@ -1,6 +1,6 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
  
 // int main() 
 // {
@@ -23,7 +23,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
  
 // int main() 
 // {
@@ -60,7 +60,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long int
+#define ll ll int
 
 int main() {
     ios::sync_with_stdio(false);

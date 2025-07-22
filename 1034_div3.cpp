@@ -1,5 +1,5 @@
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -26,7 +26,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -62,7 +62,7 @@
 // C. Prefix Min and Suffix Max
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main() 
 // {
@@ -113,7 +113,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main() 
 // {
@@ -163,7 +163,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+using ll = ll;
 
 int main() 
 {

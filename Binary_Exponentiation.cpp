@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 ll power(ll base,ll pow,ll mod)
 {
@@ -41,7 +41,7 @@ cout<<ans;*/
 
 // Binary exponentiation ittarative mathod(luv)
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // const int mod=1e9+7;
 // ll power(ll base,ll pow)
@@ -79,7 +79,7 @@ cout<<ans;*/
 
 // Binary exponentiation recursive mathod(luv)
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // const int mod=1e9+7;
 // ll power(ll base,ll pow)
@@ -116,7 +116,7 @@ cout<<ans;*/
 
 //****lurge expanantiation using binary multiply */
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int mod=1e9+7;
 

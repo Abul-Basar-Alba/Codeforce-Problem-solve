@@ -1,6 +1,6 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -38,7 +38,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main()
 // {
@@ -168,7 +168,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// typedef long long ll;
+// typedef ll ll;
 // const ll MOD = 998244353;
 
 
@@ -260,15 +260,15 @@ using namespace std;
 const int MOD = 998244353;
 const int MAX_N = 2e5 + 10;
 
-vector<long long> pow2(MAX_N);
-vector<long long> inv_pow2(MAX_N);
+vector<ll> pow2(MAX_N);
+vector<ll> inv_pow2(MAX_N);
 
 void precompute() {
     pow2[0] = 1;
     for (int i = 1; i < MAX_N; ++i) {
         pow2[i] = pow2[i - 1] * 2 % MOD;
     }
-    long long inv_2 = (MOD + 1) / 2; // 499122177
+    ll inv_2 = (MOD + 1) / 2; // 499122177
     inv_pow2[0] = 1;
     for (int i = 1; i < MAX_N; ++i) {
         inv_pow2[i] = inv_pow2[i - 1] * inv_2 % MOD;
@@ -299,7 +299,7 @@ int main() {
             suffix_3[i] = suffix_3[i + 1] + (a[i] == 3);
         }
 
-        long long total_pairs = 0;
+        ll total_pairs = 0;
         for (int i = 0; i < n; ++i) {
             if (a[i] == 1) {
                 total_pairs += suffix_3[i + 1];
@@ -307,8 +307,8 @@ int main() {
             }
         }
 
-        long long current_sum = 0;
-        long long total = 0;
+        ll current_sum = 0;
+        ll total = 0;
         for (int j = 0; j < n; ++j) {
             if (a[j] == 1) {
                 int k = prefix_2[j + 1];
@@ -319,7 +319,7 @@ int main() {
             }
         }
 
-        long long ans = (total - total_pairs + MOD) % MOD;
+        ll ans = (total - total_pairs + MOD) % MOD;
         cout << ans << '\n';
     }
 

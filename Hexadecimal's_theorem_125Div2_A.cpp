@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -10,7 +10,7 @@ int main()
 */
 //Hence, x to be a Fibonacci number, 5*x^2+4 or 5*x^2-4 must be a perfect square.
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

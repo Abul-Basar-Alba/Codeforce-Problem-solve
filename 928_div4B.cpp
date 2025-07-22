@@ -1,5 +1,5 @@
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int solve(int n)
@@ -36,7 +36,7 @@ int main()
 }
 */
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 bool sqr(const vector<string>& gr, int n)
@@ -93,7 +93,7 @@ int main()
     return 0;
 }*/
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

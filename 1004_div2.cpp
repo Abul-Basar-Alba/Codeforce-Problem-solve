@@ -3,7 +3,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -31,7 +31,7 @@
 //C - Devyatkino
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
  
 // const int L = 22; 
@@ -162,7 +162,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // bool has_seven(int n) 
 // {

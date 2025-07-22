@@ -1,7 +1,7 @@
 //A - Traveling Takahashi Problem 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -37,7 +37,7 @@
 //B - Hands on Ring (Easy) 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main()

@@ -2,7 +2,7 @@
 using  namespace  std;
 #define nl      '\n'
 #define mod 1000000007
-typedef long long int ll;
+typedef ll int ll;
 #define N 5
 ll I[N][N],T[N][N];
 

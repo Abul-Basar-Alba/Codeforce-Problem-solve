@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -38,7 +38,7 @@ int main()
 }*/
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() {
@@ -73,7 +73,7 @@ int main()
 
 
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int N = 1e5 + 5;
 const ll inf = 1e18;

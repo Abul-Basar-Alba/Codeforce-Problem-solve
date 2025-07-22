@@ -10,7 +10,7 @@ int main()
         int n;
         cin>>n;
         int a[n+2];
-        long long int ans=0;
+        ll int ans=0;
         for(int i=0;i<n;i++)
         {
             cin>>a[i];
@@ -37,7 +37,7 @@ int main()
         int n;
         cin>>n;
         int a[n+2];
-        long long int ans=0;
+        ll int ans=0;
         for(int i=0;i<n;i++)
         {
             cin>>a[i];

@@ -1,5 +1,5 @@
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -80,7 +80,7 @@ int main() {
                 q.push(current + 1);
             }
 
-            if (K != 0 && (long long)current * K <= B && dp[current * K] == INT_MAX) {
+            if (K != 0 && (ll)current * K <= B && dp[current * K] == INT_MAX) {
                 dp[current * K] = dp[current] + 1;
                 q.push(current * K);
             }

@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using  namespace  std;
 //bool prime[90000001];
 int t;
@@ -63,10 +63,10 @@ int main()
 }*/
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int t;
-long long L, R;
+ll L, R;
 vector<int>sieve;
 void solve()
  {
@@ -133,7 +133,7 @@ int main()
     return 0;
 }*/
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

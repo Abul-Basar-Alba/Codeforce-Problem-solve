@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 const ll mod = 1000000007; // 10^9 + 7
@@ -43,7 +43,7 @@ int main()
     return 0;
 }*/
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 const ll mod = 1e9 + 7;
