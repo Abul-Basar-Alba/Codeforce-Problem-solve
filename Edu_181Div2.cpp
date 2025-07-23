@@ -80,31 +80,35 @@ int main()
 // }
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll long long
 // using namespace std;
 
 // int main() 
 // {
 //     ios::sync_with_stdio(false);
 //     cin.tie(0);
+
 //     ll t;
 //     cin >> t;
+
 //     while (t--) 
 //     {
 //         ll a, b, k;
 //         cin >> a >> b >> k;
-//         ll g =__gcd(a, b);
-//         if (a / g <= k && b / g <= k) 
-//         {
-//             cout << "1\n";
-//         } 
-//         else 
-//         {
-//             cout << "2\n";
-//         }
+
+//         ll g = __gcd(a, b); 
+//         ll dx = a / g;
+//         ll dy = b / g;
+
+//         if (dx <= k && dy <= k)
+//             cout << "1\n"; 
+//         else
+//             cout << "2\n"; 
 //     }
+
 //     return 0;
 // }
+
 
 // #include <bits/stdc++.h>
 // #define ll long long int

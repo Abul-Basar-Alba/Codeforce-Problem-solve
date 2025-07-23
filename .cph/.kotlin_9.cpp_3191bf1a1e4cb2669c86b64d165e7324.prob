@@ -1,0 +1,1 @@
+{"name":"Local: kotlin_9","url":"/mnt/Codeforce-Problem-solve/kotlin_9.cpp","tests":[{"id":1753268888597,"input":"4\nuser0125\na1\nkotlin990000\n1code0forces101\n","output":"user0\na\nkotlin9\n1code0forces"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/Codeforce-Problem-solve/kotlin_9.cpp","group":"local","local":true}
