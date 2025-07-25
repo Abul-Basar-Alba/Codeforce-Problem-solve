@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-#include <bits/stdc++.h>
-#define ll ll
-using namespace std;
 
-int main() 
-=======
 // #include <bits/stdc++.h>
-// #define ll ll
+// #define ll long long
 // using namespace std;
 
 // int main() 
@@ -36,7 +30,7 @@ int main()
 
 
 // #include <bits/stdc++.h>
-// #define ll ll
+// #define ll long long
 // using namespace std;
 
 // int main() 
@@ -68,7 +62,7 @@ int main()
 
 
 // #include <bits/stdc++.h>
-// #define ll ll
+// #define ll long long
 // using namespace std;
 
 // int main() 
@@ -113,72 +107,80 @@ int main()
 // }
 
 
-#include <bits/stdc++.h>
-using namespace std;
-using ll = ll;
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
 
-int main()
->>>>>>> 42448eb63695a07bcef7489edec08372fc25bfdb
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+// int main()
 
-<<<<<<< HEAD
-    ll t; 
-    cin >> t;
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
 
-    while (t--) 
-    {
-        ll n;
-        cin >> n;
-        ll mx1=0,mx2=0;
-        while(n--)
-        {
-            ll w,h;
-            cin>>w>>h;
-            mx1=max(mx1,w);
-            mx2=max(mx2,h);
+//     ll t; 
+//     cin >> t;
 
-        }
-        cout<<2*(mx1+mx2)<<endl;
-    }
-}
-=======
-    ll t;
-    cin >> t;
-    while(t--)
-    {
-        ll n;
-        ll x;
-        cin >> n >> x;
-        vector<array<ll,3>> a(n);
-        for(int i = 0; i < n; i++){
-            cin >> a[i][0] >> a[i][1] >> a[i][2]; 
-        }
-        sort(a.begin(), a.end(),
-             [&](auto &A, auto &B){
-                 return A[0] < B[0];
-             });
+//     while (t--) 
+//     {
+//         ll n;
+//         cin >> n;
+//         ll mx1=0,mx2=0;
+//         while(n--)
+//         {
+//             ll w,h;
+//             cin>>w>>h;
+//             mx1=max(mx1,w);
+//             mx2=max(mx2,h);
+
+//         }
+//         cout<<2*(mx1+mx2)<<endl;
+//     }
+// }
+// =======
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
+
+// int main()
+
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+//     ll t;
+//     cin >> t;
+//     while(t--)
+//     {
+//         ll n;
+//         ll x;
+//         cin >> n >> x;
+//         vector<array<ll,3>> a(n);
+//         for(int i = 0; i < n; i++){
+//             cin >> a[i][0] >> a[i][1] >> a[i][2]; 
+//         }
+//         sort(a.begin(), a.end(),
+//              [&](auto &A, auto &B){
+//                  return A[0] < B[0];
+//              });
         
         
-        ll best= x;
-        for(int i=0;i<n;i++)
-        {
-            if(a[i][0]<=x&&x<=a[i][1])
-            {
+//         ll best= x;
+//         for(int i=0;i<n;i++)
+//         {
+//             if(a[i][0]<=x&&x<=a[i][1])
+//             {
                 
-                best = max(best, a[i][2]);
-                x =best;
-            }
-            else if(a[i][0]>x)
-            {
-                break;
-            }
-        }
-        cout << best << "\n";
-    }
-    return 0;
-}
+//                 best = max(best, a[i][2]);
+//                 x =best;
+//             }
+//             else if(a[i][0]>x)
+//             {
+//                 break;
+//             }
+//         }
+//         cout << best << "\n";
+//     }
+//     return 0;
+// }
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -242,4 +244,40 @@ int main()
 
 //     return 0;
 // }
->>>>>>> 42448eb63695a07bcef7489edec08372fc25bfdb
+
+
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    ll t;
+    cin >> t;
+    while(t--)
+    {
+        ll n;
+        cin >> n;
+        vector<ll> v(n);
+        for(int i = 0; i < n; i++)
+        {
+            cin >> v[i];
+        }
+
+        ll mn = LLONG_MAX;  // ll এর সবচেয়ে বড় মান
+        for (int i = 0; i < n; i++)  // 0-based indexing
+        {
+            ll x = i;  // i এর আগে কয়টা এলিমেন্ট আছে
+            ll y = 0;
+            for (int j = i + 1; j < n; j++)  // i+1 থেকে n-1 পর্যন্ত
+            {
+                if (v[j] > v[i]) y++;
+            }
+            mn = min(mn, x + y);
+        }
+        cout << mn << '\n';
+    }
+    return 0;
+}
