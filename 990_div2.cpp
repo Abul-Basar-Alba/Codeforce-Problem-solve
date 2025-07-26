@@ -2,7 +2,7 @@
 //B. Replace Character
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -85,7 +85,7 @@
 //A. Alyona and a Square Jigsaw Puzzle
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()

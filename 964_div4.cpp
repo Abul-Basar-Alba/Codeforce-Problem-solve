@@ -1,5 +1,5 @@
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -32,7 +32,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -97,7 +97,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -163,7 +163,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -228,7 +228,7 @@
 //#define FAST_IO ios_base::sync_with_stdio(false); cin.tie(NULL)
 //#define all(x) (x).begin(), (x).end()
 //using namespace std;
-//#define int long long
+//#define int ll
 //
 //int qry(int a, int b){
 //   cout<<"? "<<a<<" "<<b<<endl;
@@ -268,7 +268,7 @@
 //}
 
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // int main()
 // {
@@ -319,7 +319,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()

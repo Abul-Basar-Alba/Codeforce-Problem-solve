@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using  namespace  std;
 //bool prime[90000001];
-int n=90000000;
+long long int n=90000000;
 vector<bool> make(n);
 vector<int>v;
 void sieve()

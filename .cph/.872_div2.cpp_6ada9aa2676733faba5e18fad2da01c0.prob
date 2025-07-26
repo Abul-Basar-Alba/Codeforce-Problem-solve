@@ -1,0 +1,1 @@
+{"name":"Local: 872_div2","url":"/mnt/Codeforce-Problem-solve/872_div2.cpp","tests":[{"id":1753089914808,"input":"1\n4 3\n-32030 59554 16854 -85927 68060 -64460 -79547 90932 85063 82703 -12001 38762\n","output":"1933711\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/Codeforce-Problem-solve/872_div2.cpp","group":"local","local":true}

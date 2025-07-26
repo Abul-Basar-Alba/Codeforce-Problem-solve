@@ -1,5 +1,5 @@
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -24,7 +24,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // ll bit(ll x) 
@@ -60,7 +60,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // struct Platform 
@@ -165,7 +165,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main() 
 // {
@@ -274,7 +274,7 @@ int main() {
             pos[a[i]].push_back(i + 1);
         }
 
-        long long ans = 1e18;
+        ll ans = 1e18;
         for (int x = 1; x <= n; x++) {
             if (pos[x].empty()) continue;
 
@@ -291,11 +291,11 @@ int main() {
             }
             segments.push_back(current);
 
-            long long candidate_ans = (long long)(n - 1) * x;
+            ll candidate_ans = (ll)(n - 1) * x;
             for (const vector<int>& seg : segments) {
                 int L = seg[0];
                 int R = seg.back();
-                long long cost_seg = (long long)x * ((L - 1) + (n - R));
+                ll cost_seg = (ll)x * ((L - 1) + (n - R));
                 if (cost_seg < candidate_ans) {
                     candidate_ans = cost_seg;
                 }

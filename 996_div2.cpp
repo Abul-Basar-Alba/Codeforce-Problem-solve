@@ -1,6 +1,6 @@
 //A: Two Frogs
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -34,7 +34,7 @@
 //B: Crafting
 
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() {

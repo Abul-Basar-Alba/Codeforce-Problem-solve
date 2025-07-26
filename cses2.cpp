@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int inf=3e5;
 vector<int>v(inf);

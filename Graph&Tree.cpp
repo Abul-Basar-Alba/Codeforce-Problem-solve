@@ -69,7 +69,7 @@ for(pair<int,int> child:graph2[i]){
 // dfs code (Depth-First Search function)
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //const int N=1e5+10;
 //

@@ -1,6 +1,6 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -42,7 +42,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -66,7 +66,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -108,7 +108,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -147,7 +147,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -210,7 +210,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 
 // int main()
 // {
@@ -241,7 +241,7 @@
 
 
 // #include <bits/stdc++.h>
-// using ll = long long;
+// using ll = ll;
 // using namespace std;
 
 // int main()
@@ -285,7 +285,7 @@
 
 
 #include <bits/stdc++.h>
-using ll = long long;
+using ll = ll;
 using namespace std;
 
 int main()

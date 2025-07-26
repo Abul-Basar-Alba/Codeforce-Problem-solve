@@ -4,8 +4,8 @@
 /*#include<bits/stdc++.h>
 using  namespace  std;
 
-typedef long long int ll;
-typedef unsigned long long int  llu;
+typedef ll int ll;
+typedef unsigned ll int  llu;
 #define N 101
 ll ar[N][N],I[N][N];
 ll mod = 1000000007;
@@ -101,7 +101,7 @@ int main()
 	return 0;
 }*/
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 #define nl      '\n'
 #define mod 1000000007
 using namespace std;

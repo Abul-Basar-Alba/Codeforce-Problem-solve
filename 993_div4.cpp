@@ -2,7 +2,7 @@
 //A: Easy Problem
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -22,7 +22,7 @@
 //B: Normal Problem
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -50,7 +50,7 @@
 //C: Hard Problem
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -81,7 +81,7 @@
 //D: Harder Problem
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int main() 
@@ -126,7 +126,7 @@
 //E: Insane Problem
 
 #include <bits/stdc++.h>
-#define ll long long
+#define ll ll
 using namespace std;
 
 ll _count(ll k, ll l1, ll r1, ll l2, ll r2) 

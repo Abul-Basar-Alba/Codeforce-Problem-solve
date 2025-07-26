@@ -1,0 +1,1 @@
+{"name":"Local: Beta_33","url":"/mnt/Codeforce-Problem-solve/Beta_33.cpp","tests":[{"id":1753267553099,"input":"4 3 18\n2 3\n1 2\n3 6\n2 3\n","output":"11\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/Codeforce-Problem-solve/Beta_33.cpp","group":"local","local":true}

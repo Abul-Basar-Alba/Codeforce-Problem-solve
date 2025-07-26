@@ -3,7 +3,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -26,7 +26,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -57,7 +57,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -118,7 +118,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long int
+// #define ll ll int
 
 // int main() 
 // {
@@ -149,7 +149,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long int
+#define ll ll int
 
 int main() 
 {
@@ -187,7 +187,7 @@ int main()
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// typedef long long ll;
+// typedef ll ll;
 
 // int main() 
 // {
@@ -237,7 +237,7 @@ int main()
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// typedef long long ll;
+// typedef ll ll;
 
 // int main() 
 // {
@@ -264,7 +264,7 @@ int main()
  
 //         sort(b.begin(), b.end());
  
-//         long long cur = -1000000000000000000LL;  
+//         ll cur = -1000000000000000000LL;  
 //         bool ok= true;
  
 //         for (int i = 0; i < n; i++)
@@ -297,7 +297,7 @@ int main()
 //G - Skibidus and Capping
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
  
 // const int MAX_N = 200000;

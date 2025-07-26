@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll unsigned long long int
+#define ll unsigned ll int
 using namespace std;
 int main()
 {

@@ -15,7 +15,7 @@ int main()
     cout <<A[r-1][c-1]<<endl;
 }*/
 /*#include<bits/stdc++.h>
-#define ll unsigned long long int
+#define ll unsigned ll int
 using namespace std;
 const int mod= 1e100;
 int main()
@@ -29,7 +29,7 @@ int main()
 }
 */
 #include <bits/stdc++.h>
-#define LL unsigned long long
+#define LL unsigned ll
 using namespace std;
 const int mod= 1e50;
 /*LL gcd(LL a, LL b)
@@ -45,7 +45,7 @@ int main()
 
     LL result =__gcd(num1, num2);
 
-    cout << (long long)result << endl;
+    cout << (ll)result << endl;
     return 0;
 }
 

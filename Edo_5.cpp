@@ -1,7 +1,7 @@
 //A - Leyland Number 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -23,7 +23,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -63,7 +63,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // bool isPalindrome(string s, int l, int r) 
@@ -109,7 +109,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// typedef long long int ll;
+// typedef ll int ll;
 
 // void solve() 
 // {
@@ -163,7 +163,7 @@
 //E - 321-like Searcher 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() 

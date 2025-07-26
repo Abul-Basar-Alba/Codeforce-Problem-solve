@@ -1,5 +1,5 @@
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -24,7 +24,7 @@
 
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -132,7 +132,7 @@
 
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -197,7 +197,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -263,7 +263,7 @@ void solve() {
     int t;
     cin >> t;
     while (t--) {
-        long long x, y, k;
+        ll x, y, k;
         cin >> x >> y >> k;
 
         for (int i = 0; i < k; ++i) {

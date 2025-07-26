@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 //const int MOD = 1e9 + 7;
 ll mod(ll a, ll m)
@@ -26,7 +26,7 @@ int main()
         cout<<(mod(-1*y,1000000007))<<endl;
 }*/
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 const int MOD = 1e9 + 7;
 ll mod(ll a, ll m)

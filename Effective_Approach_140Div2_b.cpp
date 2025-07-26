@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 vector<int>visay(100001);
 vector<int>peti(1000001);
@@ -40,7 +40,7 @@ int main()
     }
     int m,b;
     cin>>m;
-    long long visiya(0),petiya(0);
+    ll visiya(0),petiya(0);
     while(m--)
     {
         cin>>b;

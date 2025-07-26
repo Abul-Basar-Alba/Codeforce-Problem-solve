@@ -1,7 +1,7 @@
 //C. Penchick and BBQ Buns
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -41,7 +41,7 @@
 //B. Penchick and Satay Sticks
 
 // #include <bits/stdc++.h>
-// #define ll long long int 
+// #define ll ll int 
 // using namespace std;
  
 // int main()
@@ -93,7 +93,7 @@
 //A. Penchick and Modern Monument
 
 #include<bits/stdc++.h>
-#define ll long long int 
+#define ll ll int 
 using namespace std;
 int main()
 {

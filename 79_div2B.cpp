@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 ll sum(ll val)
 {
@@ -35,7 +35,7 @@ int main()
     cout<<cnt<<endl;
 }*/
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 ll sum(ll val)

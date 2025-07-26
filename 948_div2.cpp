@@ -1,5 +1,5 @@
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -29,7 +29,7 @@
 
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //void solve()
@@ -101,8 +101,8 @@ int main() {
     while (t--) {
         int n;
         cin >> n;
-        vector<long long> a(n);
-        unordered_set<long long> elementsSet;
+        vector<ll> a(n);
+        unordered_set<ll> elementsSet;
 
         for (int i = 0; i < n; ++i) {
             cin >> a[i];
@@ -112,7 +112,7 @@ int main() {
         // Find the maximum special subsequence length
         int maxSpecialSubseqLength = 0;
         for (int i = 0; i < n; ++i) {
-            long long currentLCM = a[i];
+            ll currentLCM = a[i];
             for (int j = i; j < n; ++j) {
                 currentLCM = (currentLCM * a[j]) / __gcd(currentLCM, a[j]);
                 if (currentLCM > 1e9) break;

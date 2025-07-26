@@ -1,5 +1,5 @@
 // #include<bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 // int main()
 // {
@@ -27,7 +27,7 @@
 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 bool vis[1001][1001];
 vector<string>ed;

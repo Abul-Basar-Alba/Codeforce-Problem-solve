@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -30,7 +30,7 @@ int main()
 //c.good array
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -89,7 +89,7 @@ int main()
 // using multiset same code
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -142,7 +142,7 @@ int main()
 
 
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

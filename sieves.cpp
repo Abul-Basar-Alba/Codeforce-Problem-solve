@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -28,30 +28,27 @@ using ll=long long;
 using namespace std;
 int main()
 {
-    ll N=50000;
+    const ll N = 1e7;
     //cin>>N;
-    vector<bool>mark(N);
-    vector<int>prime;
+    vector<bool> mark(N, 0);
+    vector<ll>prime;
     //vector<int>sum(N);
     ll sum=0;
-    mark[0]=mark[1]=1;
-    prime.push_back(2);
-    for(int i=4;i<N;i+=2)
-       mark[i]=1;
-    for(int i=3;i<N;i+=2)
-    {
-        if(mark[i]==0)
+   
+   for (ll i = 2; i < N; i++) {
+        if (!mark[i]) {
             prime.push_back(i);
-        for(int j=i*i;j<N;j+=(2*i))
-        {
-            mark[j]=1;
+            if (1LL * i * i < N) {
+                for (ll j = i * i; j < N; j += i)
+                    mark[j] = 1;
+            }
         }
     }
-    for(int i=0;i<prime.size();i++)
-    {
-       // sum+=prime[i];
-        cout<<prime[i]<<" ";
-    }
+    cout << "Total Primes under 1e7: " << prime.size() << "\n";
+    cout << "First 10 primes: ";
+    for (int i = 0; i < 10; i++)
+        cout << prime[i] << " ";
+    cout << endl;
        // cout<<sum<<endl;
 }
 //#include<bits/stdc++.h>

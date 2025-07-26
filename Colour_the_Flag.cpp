@@ -99,7 +99,7 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
+typedef ll ll;
 
 bool first(vector<string>a)
 {

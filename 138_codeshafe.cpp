@@ -1,5 +1,5 @@
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -31,7 +31,7 @@
 
 //
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //int main()
 //{
@@ -55,7 +55,7 @@
 //#include <bits/stdc++.h>
 //using namespace std;
 //
-//using ll = long long;
+//using ll = ll;
 //
 //int main()
 //{
@@ -99,7 +99,7 @@
 
 
 #include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 bool isPrime(int num)
@@ -153,7 +153,7 @@ int main()
 }
 
 //#include<bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //const int N = 100000;

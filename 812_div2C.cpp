@@ -1,57 +1,62 @@
-#include<bits/stdc++.h>
-#define ll long long int
+#include <bits/stdc++.h>
 using namespace std;
-int main()
+using ll = ll;
+
+int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    int t;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    ll t;
     cin >> t;
-
-    while (t--)
+    while (t--) 
     {
-        int n;
+        ll n;
         cin >> n;
+        vector<ll> p(n, -1);
 
-        vector<int> v(n);
-        for (int i = 0; i < n; ++i)
+        bool ok = true;
+       
+        for (int i = n - 1; i >= 0; --i) 
         {
-            v[i] = i;
-        }
+            if (p[i] != -1) 
+            continue;  
 
-        do
-        {
-            bool good= true;
-            for (int i = 0; i < n; ++i)
+            ll k = ceil(sqrt(i));
+            ll s = k * k;
+            ll j = s - i;
+           
+            if (j < 0 || j > i) 
             {
-                int sum = v[i] + i;
-                int root = sqrt(sum);
-                if (root * root != sum)
-                {
-                    good = false;
-                    break;
-                }
-            }
-
-            if (good)
-            {
-                for (int i = 0; i < n; ++i)
-                {
-                    cout << v[i] << " ";
-                }
-                cout << endl;
+                ok = false;
                 break;
             }
+
+            for (int x = j; x <= i; ++x) 
+            {
+                p[x] = s - x;
+            }
         }
-         while (next_permutation(v.begin(),v.end()));
 
+        if (!ok)
+        {
+            cout << -1 << "\n";
+        } 
+        else 
+        {
+            for (int x : p) 
+            {
+                cout << x << ' ';
+            }
+            cout << "\n";
+        }
     }
-
     return 0;
 }
 
+
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {

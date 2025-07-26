@@ -2,7 +2,7 @@
 //A. Coin Transformation
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // ll max_coins(ll n) 
@@ -37,7 +37,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long
+// #define ll ll
 // using namespace std;
 
 // int factorial_mod(int n, int mod) 
@@ -109,7 +109,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// #define ll long long
+// #define ll ll
 
 // int main() 
 // {
@@ -176,7 +176,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
+#define ll ll
 
 int main() 
 {

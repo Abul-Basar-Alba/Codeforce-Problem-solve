@@ -1,7 +1,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 // int main() 
 // {
 //     ios::sync_with_stdio(false);
@@ -31,7 +31,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long;
+// using ll = ll;
 // int main() 
 // {
 //     ios::sync_with_stdio(false);
@@ -62,7 +62,7 @@
 
 
 #include <bits/stdc++.h>
-using ll = long long;
+using ll = ll;
 using namespace std;
 
 int main() 

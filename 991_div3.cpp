@@ -2,7 +2,7 @@
 //A.Line Breaks
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 
@@ -50,7 +50,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// #define ll long long
+// #define ll ll
 
 // void solve() 
 // {
@@ -115,7 +115,7 @@
 //C.Uninteresting Number
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main()

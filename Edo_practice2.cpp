@@ -1,7 +1,7 @@
 //A - Cut .0 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -16,7 +16,7 @@
 //B - Decrease 2 max elements 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -50,7 +50,7 @@
 //C - Enumerate Sequences 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -111,7 +111,7 @@
 //F - Minimum Steiner Tree 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 const ll N = 1e5 + 7;

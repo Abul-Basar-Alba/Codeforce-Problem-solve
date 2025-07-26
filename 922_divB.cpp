@@ -1,6 +1,6 @@
 /*#include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+using ll = ll;
 int main()
 {
     ll t;
@@ -37,7 +37,7 @@ int main()
 }*/
 /*#include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+using ll = ll;
 int main()
 {
     ll t;
@@ -57,7 +57,7 @@ int main()
 
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+using ll = ll;
 
 void solve(vector<pair<ll, ll>>& p)
 {

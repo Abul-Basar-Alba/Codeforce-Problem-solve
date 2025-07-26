@@ -1,6 +1,6 @@
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long int;
+// using ll = ll int;
 
 // int main()
 // {
@@ -31,7 +31,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// using ll = long long int;
+// using ll = ll int;
 
 // int main()
 // {
@@ -78,7 +78,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;    
-using ll = long long int;
+using ll = ll int;
 int main()
 {
     ll t;

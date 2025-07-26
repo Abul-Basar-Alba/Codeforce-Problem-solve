@@ -1,5 +1,5 @@
 /*#include<bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 int main()
 {
@@ -33,7 +33,7 @@ int main()
     }
 }*/
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main()
@@ -88,7 +88,7 @@ int main()
 
 // contest B
 /*#include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main()
@@ -153,7 +153,7 @@ int main()
 }
 */
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 double p,w,n,x,y,r,i,c,d;

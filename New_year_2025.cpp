@@ -2,7 +2,7 @@
 //G - Ancient Keyboard (AtCoder - abc373_b )
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -35,7 +35,7 @@
 //C - Lost Memory Matters 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -66,7 +66,7 @@
 //D - Friendship Testing 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -104,7 +104,7 @@
 //H - Chaos!! 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 
@@ -172,7 +172,7 @@
 //H - Chaos!! 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() 

@@ -1,7 +1,7 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-// typedef long long int ll;
+// typedef ll int ll;
 
 // void solve(void)
 // {
@@ -47,7 +47,7 @@
 // }
 
 #include <bits/stdc++.h>
-#define ll long long
+#define ll ll
 using namespace std;
 
 int main() 

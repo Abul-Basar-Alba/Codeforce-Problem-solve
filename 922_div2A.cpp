@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-using ll = long long;
+using ll = ll;
 
 void solve(ll x, ll y)
 {

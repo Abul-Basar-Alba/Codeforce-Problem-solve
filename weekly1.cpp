@@ -1,5 +1,5 @@
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -27,7 +27,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -53,7 +53,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //const int N=1000000;
 //using namespace std;
 //
@@ -103,7 +103,7 @@
 
 
 //#include <bits/stdc++.h>
-//#define ll long long int
+//#define ll ll int
 //using namespace std;
 //
 //int main()
@@ -146,7 +146,7 @@
 
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main()
@@ -200,7 +200,7 @@
 
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 const int N = 1000000;

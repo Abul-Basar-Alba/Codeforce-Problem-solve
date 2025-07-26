@@ -2,7 +2,7 @@
 //A. Game of Division
 
 // #include <bits/stdc++.h>
-// #define ll long long int
+// #define ll ll int
 // using namespace std;
 
 // int main() 
@@ -56,7 +56,7 @@
 //B. Paint a Strip
 
 #include <bits/stdc++.h>
-#define ll long long int
+#define ll ll int
 using namespace std;
 
 int main() 

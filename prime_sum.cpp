@@ -1,6 +1,6 @@
 /*#include<bits/stdc++.h>
 //const N=10e18
-using ll=long long;
+using ll=ll;
 using namespace std;
 int main()
 {
@@ -32,7 +32,7 @@ int main()
 }*/
 #include<bits/stdc++.h>
 //const N=10e18
-using ll=long long;
+using ll=ll;
 using namespace std;
 int main()
 {
