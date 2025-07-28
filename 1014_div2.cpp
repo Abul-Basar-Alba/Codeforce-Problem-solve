@@ -62,40 +62,82 @@
 // }
 
 #include <bits/stdc++.h>
+#define ll long long int
 using namespace std;
 
-int main(){
+int main() 
+{
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int T;
-    cin >> T;
-    while(T--){
-        int n;
+    ll t;
+    cin >> t;
+    while(t--) 
+    {
+        ll n;
         cin >> n;
-        string a, b;
-        cin >> a >> b;
-
-        long long sum0 = 0, sum1 = 0;
-        // 1-based indexing mentally; here i=0..n-1
-        for(int i = 0; i < n; i++){
-            if ((i & 1) == 0) {
-                // i+1 is odd
-                if (a[i] == '1') sum0++;
-                if (b[i] == '1') sum1++;
-            } else {
-                // i+1 is even
-                if (b[i] == '1') sum0++;
-                if (a[i] == '1') sum1++;
+        string a,b;
+        cin>>a>>b;
+        ll zero=0;
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]=='0')
+            {
+                zero++;
             }
         }
-
-        // floor(n/2) == n/2,  ceil(n/2) == (n+1)/2
-        if (sum0 <= n/2 && sum1 <= (n + 1)/2) {
-            cout << "YES\n";
-        } else {
-            cout << "NO\n";
+        if(zero==n)
+        {
+            cout<<"YES\n";
+            continue;
         }
+        bool ok=true;
+        ll odd=0,even=0;
+        for(int i=0;i<n;i++)
+        {
+          if(b[i]=='0')
+          {
+            if(i%2==0)
+            {
+                even++;
+            }
+            else
+            {
+                odd++;
+            }
+          }
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]=='1')
+            {
+                if(i%2==1)
+                {
+                    if(even<=0)
+                    {
+                        ok=false;
+                        break;
+                    }
+                    even--;
+                }
+                else
+                {
+                     if(odd<=0)
+                    {
+                        ok=false;
+                        break;
+                    }
+                    odd--;
+                }
+            }
+        }
+       
+        if(ok)
+        {
+           cout<<"YES\n";  
+        }
+        else
+         cout<<"NO\n";
     }
     return 0;
 }
