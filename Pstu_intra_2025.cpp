@@ -48,45 +48,30 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;
+    ll t;
     cin >> t;
-    while (t--) {
-        int n;
+    while (t--) 
+    {
+        ll n;
         cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
+        vector<ll> a;
+        for (int i = 1; i < n; i++) 
+        {
+            a.push_back(i);
         }
-
-        if (n == 3) {
-            if (a[0] == 3 && a[1] == 2 && a[2] == 1) {
-                cout << "3 2 1\n";
-                continue;
-            }
+        ll l=1;
+        for(int i=1;i<n;i++)
+        {
+            l=lcm(l,1LL*i);
         }
-
-        if (n == 4) {
-            if (a[0] == 4 && a[1] == 3 && a[2] == 1 && a[3] == 2) {
-                cout << "4 1 3 2\n";
-                continue;
-            }
-        }
-
-        if (n == 7) {
-            if (a[0] == 3 && a[1] == 1 && a[2] == 1 && a[3] == 2 && a[4] == 3 && a[5] == 2 && a[6] == 1) {
-                cout << "3 1 1 2 2 3 1\n";
-                continue;
-            }
-        }
-
-        for (int i = 0; i < n; i++) {
-            cout << a[i];
-            if (i < n-1) 
-                cout << ' ';
+        a.push_back(l);
+        cout << n << '\n';
+        for (auto val : a) {
+            cout << val << ' ';
         }
         cout << '\n';
-    }
 
+    }
     return 0;
 }
 
