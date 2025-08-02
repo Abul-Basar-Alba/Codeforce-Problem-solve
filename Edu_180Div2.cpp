@@ -106,83 +106,135 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// using ll = long long;
+
+// int main() 
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(nullptr);
+
+//     ll t;
+//     cin >> t;
+
+//     while (t--) 
+//     {
+//         ll n;
+//         cin >> n;
+//         vector<ll> a(n);
+//         for (ll i = 0; i < n; ++i)
+//             cin >> a[i];
+
+//         sort(a.begin(), a.end());
+//         ll cnt = 0;
+//         ll last = a[n - 1];
+
+//         for (ll i = 0; i < n; ++i) 
+//         {
+//             for (ll j = i + 1; j < n; ++j) 
+//             {
+//                 ll sum_two = a[i] + a[j];
+
+//                 ll min_k_val = last - sum_two + 1;
+//                 ll max_k_val = sum_two - 1;
+
+//                 if (min_k_val > max_k_val)
+//                     continue;
+
+                
+//                 ll l = j + 1, r = n - 1;
+//                 ll lower = n; 
+//                 while (l <= r) 
+//                 {
+//                     ll mid = (l + r) / 2;
+//                     if (a[mid] >= min_k_val) 
+//                     {
+//                         lower = mid;
+//                         r = mid - 1;
+//                     } 
+//                     else 
+//                     {
+//                         l = mid + 1;
+//                     }
+//                 }
+
+//                 l = j + 1, r = n - 1;
+//                 ll upper = n;
+//                 while (l <= r) 
+//                 {
+//                     ll mid = (l + r) / 2;
+//                     if (a[mid] > max_k_val) 
+//                     {
+//                         upper = mid;
+//                         r = mid - 1;
+//                     } 
+//                     else 
+//                     {
+//                         l = mid + 1;
+//                     }
+//                 }
+
+//                 cnt += max(0LL, upper - lower);
+//             }
+//         }
+
+//         cout << cnt << '\n';
+//     }
+
+//     return 0;
+// }
 
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
+using ll = long long;
 
-int main() {
+int main() 
+{
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     int t;
     cin >> t;
-    while (t--) {
+    while (t--) 
+    {
         int n;
         cin >> n;
-        vector<int> a(n);
-        for (int i = 0; i < n; ++i) {
+        vector<ll> a(n);
+        for (int i = 0; i < n; ++i)
             cin >> a[i];
-        }
-        
-        long long total = 0;
-        
-        if (n < 3) {
-            cout << "0\n";
-            continue;
-        }
-        
-        for (int k = 2; k < n - 1; ++k) {
-            for (int j = 1; j < k; ++j) {
-                int threshold1 = a[k] - a[j];
-                int threshold2 = a[n - 1] - a[j] - a[k];
-                int threshold = max(threshold1, threshold2);
-                
-                if (threshold < 0) {
-                    total += j;
-                } else {
-                    int low = 0, high = j - 1;
-                    int pos = j;
-                    while (low <= high) {
-                        int mid = (low + high) / 2;
-                        if (a[mid] > threshold) {
-                            pos = mid;
-                            high = mid - 1;
-                        } else {
-                            low = mid + 1;
-                        }
-                    }
-                    total += (j - pos);
+
+        sort(a.begin(), a.end());
+
+        ll cnt = 0;
+        ll mx = a[n - 1];
+
+        // Third element ধরে আগাই (a[i] = third number)
+        for (int i = 2; i < n; ++i) 
+        {
+            ll z = max(2LL * a[i], mx) - a[i];
+
+            int l = 0, r = i - 1;
+
+            while (l < r) 
+            {
+                ll sum = a[l] + a[r];
+
+                if (sum > z) 
+                {
+                    cnt += (r - l); // l to r-1 সবই valid pair
+                    r--;
+                } 
+                else 
+                {
+                    l++;
                 }
             }
         }
-        
-        int k_index = n - 1;
-        for (int j = 1; j < n - 1; ++j) {
-            int threshold = a[k_index] - a[j];
-            if (threshold < 0) {
-                total += j;
-            } else {
-                int low = 0, high = j - 1;
-                int pos = j;
-                while (low <= high) {
-                    int mid = (low + high) / 2;
-                    if (a[mid] > threshold) {
-                        pos = mid;
-                        high = mid - 1;
-                    } else {
-                        low = mid + 1;
-                    }
-                }
-                total += (j - pos);
-            }
-        }
-        
-        cout << total << "\n";
+
+        cout << cnt << '\n';
     }
-    
+
     return 0;
 }
