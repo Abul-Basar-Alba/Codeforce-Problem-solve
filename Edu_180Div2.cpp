@@ -195,11 +195,11 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int t;
+    ll t;
     cin >> t;
     while (t--) 
     {
-        int n;
+        ll n;
         cin >> n;
         vector<ll> a(n);
         for (int i = 0; i < n; ++i)
@@ -210,7 +210,7 @@ int main()
         ll cnt = 0;
         ll mx = a[n - 1];
 
-        // Third element ধরে আগাই (a[i] = third number)
+       
         for (int i = 2; i < n; ++i) 
         {
             ll z = max(2LL * a[i], mx) - a[i];
@@ -223,7 +223,7 @@ int main()
 
                 if (sum > z) 
                 {
-                    cnt += (r - l); // l to r-1 সবই valid pair
+                    cnt += (r - l); 
                     r--;
                 } 
                 else 

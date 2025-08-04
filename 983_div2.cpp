@@ -1,69 +1,80 @@
 // #include <bits/stdc++.h>
+// #define all(v) (v).begin(), (v).end()
+// #define srt(v) sort(all(v))
+// #define rsrt(v) sort(all(v), greater<ll>())
+
 // using namespace std;
+// typedef long long ll;
 
-// int main() 
+// void solve()
 // {
-//     int t; 
-//     cin >> t;
-    
-//     while (t--) 
+//     ll n;
+//     cin >> n;
+//     vector<ll> v(2*n);
+//     ll zero=0,one=0;
+//     for(int i=0;i<2*n;i++)
 //     {
-//         int n; 
-//         cin >> n;
-        
-//         vector<int>v(2 * n); 
-//         int cnt_one = 0;
-//         int cnt_zero=0;
-        
-//         for (int i = 0; i < 2 * n; ++i) 
-//         {
-//             cin >>v[i];
-//             if (v[i] == 1) 
-//             {
-//                cnt_one++;
-//             }
-//             else
-//             cnt_zero++;
-//         }
-        
-
-        
-//         int min_on = cnt_one % 2;        
-//         int max_on = min(cnt_zero, cnt_one);   
-        
-//         cout << min_on << " " << max_on << endl;
+//       cin>>v[i];
+//       if(v[i]==0)
+//       zero++;
+//       else
+//       one++;
+//     }
+//     if(zero%2!=0)
+//     {
+//       cout<<1<<" "<<min(zero,one)<<endl;
+//     }
+//     else
+//     {
+//       cout<<0<<" "<<min(zero,one)<<endl;
 //     }
     
+  
+
+// }
+
+// int main()
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+
+//     ll t = 1;
+//     cin >> t;
+//     while (t--)
+//     {
+//         solve();
+//     }
 //     return 0;
 // }
 
+        
 
-#include<bits/stdc++.h>
-#define ll ll int 
-using namespace std;
-int main()
-{
-    ll t;
-    cin>>t;
-    while(t--)
-    {
-        ll n;
-        cin>>n;
-        vector<ll>v(n);
-        for(int i=0;i<n;i++)
-        cin>>v[i];
-        sort(v.begin(),v.end());
-        ll cnt=0;
-        for(int i=0;i<n;i++)
-        {
-          if(v[n-1]>=2*v[i])
-          cnt++;
-          else
-          break;
-        }
-        cout<<cnt<<endl;
-    }
-}
+// #include<bits/stdc++.h>
+// #define ll ll int 
+// using namespace std;
+// int main()
+// {
+//     ll t;
+//     cin>>t;
+//     while(t--)
+//     {
+//         ll n;
+//         cin>>n;
+//         vector<ll>v(n);
+//         for(int i=0;i<n;i++)
+//         cin>>v[i];
+//         sort(v.begin(),v.end());
+//         ll cnt=0;
+//         for(int i=0;i<n;i++)
+//         {
+//           if(v[n-1]>=2*v[i])
+//           cnt++;
+//           else
+//           break;
+//         }
+//         cout<<cnt<<endl;
+//     }
+// }
 
 // #include<bits/stdc++.h>
 // #define ll ll int 
@@ -112,3 +123,100 @@ int main()
 //     }
 //     return 0;
 // }
+
+
+// #include <bits/stdc++.h>
+// #define all(v) (v).begin(), (v).end()
+// #define srt(v) sort(all(v))
+// #define rsrt(v) sort(all(v), greater<ll>())
+
+// using namespace std;
+// typedef long long ll;
+
+// void Basar()
+// {
+//   ll n,k;
+//   cin>>n>>k;
+//   if(n==1)
+//   {
+//     cout<<1<<endl;
+//     cout<<1<<endl;
+//     return;
+//   }
+//   if((k==n && n!=1)||(n!=1&&k==1))
+//   {
+//     cout<<-1<<endl;
+//   }
+//   else
+//   {
+//     if(k%2==0)
+//     {
+//     cout<<3<<endl;
+//     cout<<1<<" "<<k<<" "<<k+1<<endl;
+//     }
+//     else
+//     {
+//       cout<<3<<endl;
+//     cout<<1<<" "<<k-1<<" "<<k+2<<endl;
+//     }
+//   }
+    
+// }
+
+// int main()
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+
+//     ll t = 1;
+//     cin >> t;
+//     while (t--)
+//     {
+//         Basar();
+//     }
+//     return 0;
+// }
+
+#include <bits/stdc++.h>
+#define all(v) (v).begin(), (v).end()
+#define srt(v) sort(all(v))
+#define rsrt(v) sort(all(v), greater<ll>())
+
+using namespace std;
+typedef long long ll;
+
+void Basar()
+{
+  ll n;
+  cin>>n;
+  vector<ll>a(n);
+  for(int i=0;i<n;i++)
+  {
+    cin>>a[i];
+  }
+  sort(a.begin(),a.end());
+  ll r=0;
+  ll res=n;
+  for(int l=0;l+1<n;l++)
+  {
+    while(r<n&&a[r]<a[l]+a[l+1])
+    r++;
+   res=min(res,(n-(r-l)));
+  }
+  cout<<res<<endl;
+    
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    ll t = 1;
+    cin >> t;
+    while (t--)
+    {
+        Basar();
+    }
+    return 0;
+}
