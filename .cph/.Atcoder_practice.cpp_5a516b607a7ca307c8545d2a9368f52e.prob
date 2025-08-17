@@ -1,0 +1,1 @@
+{"name":"Local: Atcoder_practice","url":"d:\\Github\\Codeforce-Problem-solve\\Atcoder_practice.cpp","tests":[{"id":1734073609963,"input":"10 100\n320 578 244 604 145 839 156 857 556 400\n","output":"2736\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Github\\Codeforce-Problem-solve\\Atcoder_practice.cpp","group":"local","local":true}

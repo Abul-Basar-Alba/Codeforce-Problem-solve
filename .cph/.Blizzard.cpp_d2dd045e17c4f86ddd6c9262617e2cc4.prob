@@ -1,0 +1,1 @@
+{"name":"Local: Blizzard","url":"d:\\Github\\Codeforce-Problem-solve\\Blizzard.cpp","tests":[{"id":1732769486439,"input":"0 0 3 3 1 2 2 2 1 0\n0 1 2 3 2 2 3 0 1 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Github\\Codeforce-Problem-solve\\Blizzard.cpp","group":"local","local":true}
