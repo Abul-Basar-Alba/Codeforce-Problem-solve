@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // #include<bits/stdc++.h>
 // #define ll ll int
 // using namespace std;
@@ -71,4 +72,15 @@ int main()
         }
     }
     return 0;
+=======
+#include<bits/stdc++.h>
+#define ll ll int
+using namespace std;
+int main()
+{
+    ll x1,y1,x2,y2;
+    cin>>x1>>y1>>x2>>y2;
+    ll a=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    cout<<x1<<' '<<y1+a<<' '<<x1+a<<' '<<y1;
+>>>>>>> 2d8aa0b7ede4c7b28108de8f85e0af368a114357
 }
