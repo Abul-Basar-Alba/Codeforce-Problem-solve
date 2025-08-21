@@ -6,28 +6,27 @@
 using namespace std;
 typedef long long ll;
 
-void Basar()
+void Basar() 
 {
-    ll n;
-    cin>>n;
-    vector<vector<ll>>v(2,vector<ll>(n));
-    for(ll i=0;i<2;i++)
+    ll n; 
+    cin >> n;
+    vector<ll> a;
+    a.push_back(1);
+    a.push_back(1);
+ 
+    for(int x = 2; x <= n - 3; x++) 
     {
-        for(ll j=0;j<n;j++)
-        {
-            cin>>v[i][j];
-        }
+        a.push_back(x);
     }
-    ll ans=0;
-    ll mx=INT_MIN;
-    for(ll i=0;i<n;i++)
-    {
-        ans+=max(v[0][i],v[1][i]);
-        mx=max(mx,min(v[0][i],v[1][i]));
-    }
-    cout<<ans+mx<<endl;
+    a.push_back(1);
+    a.push_back(2);
 
+    for(int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+    }
+    cout << "\n";
 }
+
 
 int main()
 {

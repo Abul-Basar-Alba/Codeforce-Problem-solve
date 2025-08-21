@@ -8,25 +8,17 @@ typedef long long ll;
 
 void Basar()
 {
-    ll n;
-    cin>>n;
-    vector<vector<ll>>v(2,vector<ll>(n));
-    for(ll i=0;i<2;i++)
+    ll n,s;
+    cin >> n >> s;
+    ll cnt=0;
+    for(ll i=1;i<=n;i++)
     {
-        for(ll j=0;j<n;j++)
-        {
-            cin>>v[i][j];
-        }
+        ll dx,dy,x,y;
+        cin >> dx >> dy >> x >> y;
+        if((dx==dy&&x==y)||(dx!=dy&&(x+y)==s)) 
+        cnt++;
     }
-    ll ans=0;
-    ll mx=INT_MIN;
-    for(ll i=0;i<n;i++)
-    {
-        ans+=max(v[0][i],v[1][i]);
-        mx=max(mx,min(v[0][i],v[1][i]));
-    }
-    cout<<ans+mx<<endl;
-
+    cout << cnt << "\n";
 }
 
 int main()
