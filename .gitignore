@@ -1,0 +1,11 @@
+# Ignore CPH temp files
+.cph/
+
+# Ignore compiled binaries
+*.exe
+*.out
+*.o
+
+# Ignore other temp/cache files
+*.log
+*.tmp
