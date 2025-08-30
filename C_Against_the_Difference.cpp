@@ -95,30 +95,79 @@
 
 
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
 
-void solve() {
-    int n;
+void solve() 
+{
+    ll n;
     cin >> n;
-    vector<int> a(n);
-    vector<int> cnt(n + 1, 0);
-    
-    for (int i = 0; i < n; i++) {
+    vector<ll> a(n);
+    for (ll i = 0; i < n; i++)
+    {
         cin >> a[i];
-        if (a[i] <= n) {
+    }
+
+    vector<ll> cnt(n + 1, 0);
+    vector<vector<ll>> pos(n + 1);
+    
+    for (int i = 0; i < n; i++) 
+    {
+        if (a[i] <= n) 
+        {
             cnt[a[i]]++;
+            pos[a[i]].push_back(i);
         }
     }
-    
-    vector<int> dp(n + 1, 0);
-    for (int i = n; i >= 1; i--) {
-        dp[i] = cnt[i];
-        for (int j = 2 * i; j <= n; j += i) {
-            dp[i] = max(dp[i], dp[j] + cnt[i]);
+
+    vector<ll> dp(n + 1, 0);
+
+    for (ll i = n; i >= 1; i--) 
+    {
+        if (cnt[i] == 0) 
+        continue;
+      
+        vector<ll> len(cnt[i] + 1, 0);
+
+        for (ll j = 2 * i; j <= n; j += i) 
+        {
+            if (cnt[j] == 0) 
+            continue;
+            
+            for (ll p : pos[j]) 
+            {
+                auto it = upper_bound(pos[i].begin(), pos[i].end(), p);
+                if (it != pos[i].end())
+                 {
+                    int idx = it - pos[i].begin();
+                    len[idx] = max(len[idx], dp[j] + 1);
+                }
+            }
+        }
+
+        for (ll idx = 0; idx < cnt[i]; idx++) 
+        {
+            if (idx > 0) 
+            {
+                len[idx] = max(len[idx], len[idx - 1]);
+            }
+        }
+        
+        dp[i] = i * (cnt[i] / i);
+        for (ll idx = 0; idx + i - 1 < cnt[i]; idx++) 
+        {
+            ll end_idx = idx + i - 1;
+            ll chain = len[idx] + i;
+            dp[i] = max(dp[i], chain);
         }
     }
-    
-    cout << *max_element(dp.begin(), dp.end()) << "\n";
+
+    ll ans = 0;
+    for (ll i = 1; i <= n; i++) 
+    {
+        ans = max(ans, dp[i]);
+    }
+    cout << ans << "\n";
 }
 
 int main() {

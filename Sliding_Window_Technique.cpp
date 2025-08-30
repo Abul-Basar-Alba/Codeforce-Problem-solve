@@ -24,6 +24,46 @@ int main()
     cout<<ans<<endl;
 }
 
+//Best efficient KMP technic using praterb maching 
+
+// #include <bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+
+// vector<ll> prefix_function(const string &s) 
+// {
+//     ll n = s.size();
+//     vector<ll> pi(n);
+//     for (ll i = 1, j = 0; i < n; i++) 
+//     {
+//         while (j > 0 && s[i] != s[j]) 
+//         j = pi[j-1];
+//         if (s[i] == s[j]) 
+//         {
+//             j++;
+//         }
+//         pi[i] = j;
+//     }
+//     return pi;
+// }
+
+// int main() 
+// {
+//     string text, pattern;
+//     cin >> text >> pattern;
+//     string S = pattern + '#' + text;
+//     vector<ll> pi = prefix_function(S);
+
+//     ll ans = 0;
+//     for (ll l : pi) 
+//     {
+//         if (l == pattern.size()) 
+//         ans++;
+//     }
+//     cout << ans << "\n";
+// }
+
+
 //leetcode:1876. Substrings of Size Three with Distinct Characters
 
 //class Solution {
