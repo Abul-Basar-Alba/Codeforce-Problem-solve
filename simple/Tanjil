@@ -1,0 +1,3 @@
+winget install Python.Python.3
+python -m ensurepip --upgrade
+pip install matplotlib seaborn numpy pandas scikit-learn
